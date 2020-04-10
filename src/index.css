@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    cursor: default;
+}
+#all{
+    min-width: 65em;;
+}
+#topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(44,62,80);
+    color: white;
+    font-size: 0.8em;
+    padding: 0 8em;
+    line-height: 2.8em;
+}
+#topbar-left>span{
+    display: inline-block;
+    line-height: inherit;
+    padding: 0 .8em ;
+    border-right: 1px solid rgb(23,34,42);
+}
+#topbar-left>span>img {
+    max-width: 1em;
+    max-height: 1em;
+    padding: 0 .5em  ;
+}
+#reguster{
+    color:rgb(29,210,175)
+}
+#topbar-right>span{
+    display: inline-block;
+    line-height: inherit;
+    padding: 0 1em;
+    border-right: 1px solid rgb(23,34,42);
+}
+#topbar-right>span:nth-child(1){
+    border-left: 1px solid rgb(23,34,42);
+}
+#nav{
+    background-color: white;
+    padding: 0 6em;
+    line-height: 6em;
+    display: flex;
+    justify-content: space-between;
+}
+#nav-right{
+    display: flex;
+    color:rgb(93,110,128);
+}
+#nav-right>span:hover{
+    color: rgb(29,210,175);
+}
+#nav-right>span{
+    padding:0 0.5em;
+}
+#search{
+    padding: 0.3em;
+    border-radius: 50%;
+    border: 2px solid rgb(93,110,128);
+}
+#banner{
+   background:url(../resource/bg1.png) no-repeat 100%;
+   background-size: 100% 100%;
+   height: 38em;
+   display: grid;
+   grid-template-rows:31% 22% 31%  16% ;
+}
+#pic-mid{
+    grid-row: 2/3;
+    color: white;
+    text-align: center;
+}
+#sub-title{
+    margin-top: .8em;
+}
+#pic-mid>button{
+    margin-top: 1.5em;
+    margin-left: 1em;
+    color: white;
+    padding: 0.8em;
+    background-color: transparent;
+    border:1px solid white;
+    border-radius: 2px;
+}
+#pic-mid>button:hover{
+    background-color: rgb(29,210,175);
+}
+#pic-sub{
+    grid-row: 4/5;
+    background-color: rgb(44,62,80);
+    text-align: center;
+    height: 100%;
+    padding: 0 8em;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(123,140,157);
+}
+#pic-sub>span,input{
+    align-self:  center;
+}
+#find{
+    width: 6em;
+    text-align: left;
+}
+#holidays{
+    color: white;
+}
+#pic-sub input{
+    line-height: 1.5em;
+    padding: .5em;
+    border: none;
+}
+.ipt{
+    position: relative;;
+    margin-left: 1em; 
+}
+.ipt>input{
+    width: 20.8vw;
+    border-radius: 2px;
+}
+.ipt>img{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+}
+#submit{
+    width: 7em;
+    color: white;
+    background-color: rgb(29,210,175);
+}
+#show-special,#type,#clients{
+    text-align: center;
+    padding:4em 0 ;
+}
+#show-pic{
+    padding: 4em 0;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: .8em;
+}
+#show-pic>span>img{
+    width: 100%;
+    height: 100%;
+}
+#show-pic>span:nth-child(1),#show-pic>span:nth-last-child(1){
+    opacity: 0.6;
+}
+
+#show-pic>span:hover{
+    border: 3px solid rgb(29,210,175);
+    transform: scale(1.1) ;
+}
+#show-pic>span:nth-last-child(1){
+    transform: scale(1)
+}
+.apic{
+    position: relative;
+}
+.introduce{
+    color: rgb(147, 152, 156);
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    bottom: 0em;
+    padding: 0.4em 0;
+    font-size: 0.83em;
+    text-align: left;
+}
+.introduce:hover{
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+    transition: .5s;
+}
+.arror{
+    align-self: center;
+    font-weight: bold;
+}
+#type{
+    background:url(../resource/bg2.png) no-repeat 100%;
+    background-size: 100% 100%;
+    padding: 4em 0;
+}
+#type{
+    color: white;
+}
+#choose-type{
+    padding: 4em 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6,9em);
+    grid-gap: 2em;
+}
+.type-img{
+    display: inline-block;
+    width: 7em;
+    height: 7em;
+    padding: .5em;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.type-text{
+    margin-top: 0.5em;
+    color: rgb(157,175,192);
+}
+#clients-text{
+    padding: 4em 0;    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+    grid-gap: 1.5em;
+    width: 100%;
+    overflow: hidden;
+}
+.clients-kuang{
+    color: rgb(157,175,192);
+    font-size: .8em;
+    border:1px solid rgb(157,175,192);
+    padding: .8em .5em;
+    text-align: left;
+}
+.client-name{
+    padding: .4em 0 ;
+    font-size: 1em;
+    color: rgb(29,210,175);
+}
+.clients-kuang:hover{
+    color: black;
+    transform: scale(1.1);
+    border-top: 3px solid rgb(29,210,175);
+}
+#footer{
+    color: white;
+    font-size: 0.8em;
+    padding: 4em 0 3em 0;
+    background-color: rgb(44,62,80);
+}
+#footer h3{
+    padding: .5em 0;
+    font-size: 1.3em;
+    color: rgb(29,210,175);
+}
+#footer-a{
+    line-height: 1.6em;
+    display: grid;
+    grid-gap: 1.5em;
+    justify-content: center;
+    grid-template-columns: repeat(4,18em);
+}
+.footer03-kuang{
+    display: inline-block;
+    margin:0.2em;
+    padding:0.1em;
+    border: 1px solid white;
+}
+.foot04-pic{
+    margin-right: 2em;
+    max-width: 1.5em;
+    max-height: 1.5em;
+}
+#foot04-text{
+    padding-bottom: .8em;
+}
+#subscribe{
+    margin-top: 1em;
+    padding:.5em;
+    width: 10em;
+    border: none;
+}
+#go{
+    width: 3em;
+    padding: .5em;
+    background-color: rgb(29,210,175);
+    color: white;
+    border: none;
+}
+.footer02-pic{
+    align-items: center;
+    display: flex;
+    color:rgb(29,210,175);
+}
+ .footer02-pic img{
+     max-width: 2em;
+     max-height: 2em;
+    padding: .2em;
+    border: 1px solid white;
+} 
+.footer02-text{
+    padding: .8em;
+}
+.footer02-text::first-line{
+    color:white
+}
+#footer-b{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+#footer-b>span{
+    display: inline-block;
+     padding: .5em;
+}
+#copy{
+    font-size: .7em;
+    text-align: center;
+    color: rgb(157,175,192);
+    padding: .8em 0;
+}
+#trangle{
+    text-align: center;
+}
+#trangle::before{
+    content: "";
+    border: 3em solid transparent;
+    border-bottom: 3em solid rgb(29,210,175);
+}  
